@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login-astronaut</title> <!--TITLE-->
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="style.css"> <!--CSS-->
+    </head>
+
+    <body>
+        <div class="background"></div>
+
+        <div class="centering">
+            <form class="my-form"> <!--FORM-->
+
+                <div class="login-welcome-row">
+                    <img class="login-welcome" src="img/astronaut.jpg" alt="Astronaut"> <!--IMG-->
+                    <h1>Login</h1>
+                </div>
+
+                <div class="text-field">
+                    <label for="email">Email:</label> <!--LABEL-->
+                    <input
+                        aria-label="Email"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="enter email"
+                        required
+                    >
+                    <img alt="Email Icon" title="Email Icon" src="img/email.svg"> <!--IMG-->
+                </div>
+
+                <div class="text-field">
+                    <label for="password">Password:</label> <!--LABEL-->
+                    <input
+                        id="password"
+                        type="password"
+                        aria-label="Password"
+                        name="password"
+                        placeholder="enter password"
+                        title="Minimum 6 characters, at least 1 letter and 1 number" 
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+                        required
+                    >
+                    <img alt="Password Icon" title="Password Icon" src="img/password.svg"> <!--IMG-->
+                </div>
+
+                <input type="submit" class="my-form__button" value="Login" > <!--BUTTON-->
+
+                <div class="my-form__actions">
+                    <div class="my-form__row">
+                        <span>Forgot your password?</span>
+                        <a href="#" title="reset password">Reset password</a>
+                    </div>
+                    <div class="my-form__signup">
+                        <a href="#" title="create account">Create account</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <script src="script.js"></script> <!--JS-->
+    </body>
+</html>
